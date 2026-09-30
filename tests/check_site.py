@@ -146,7 +146,7 @@ def check_no_placeholder_text(raw, p):
 def check_hero_about_features(raw, p):
     errs = []
     hero = part(raw, "top")
-    errs += need(hero, ("横川駅", "徒歩8分", "72㎡", "最大30名", "¥1,700〜", SPACEMARKET), "ファーストビュー")
+    errs += need(hero, ("横川駅", "徒歩8分", "72㎡", "最大30名", "¥1,980〜", SPACEMARKET), "ファーストビュー")
     errs += need(part(raw, "about"), ("健康の女神", "こころ", "からだ", "おかね", "2024年"), "Salusについて")
     errs += need(part(raw, "features"), ("アクセス", "広さ", "清潔"), "特徴")
     return errs
