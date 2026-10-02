@@ -1,3 +1,5 @@
 photos/
 .DS_Store
 __pycache__/
+docs/
+.claude/
