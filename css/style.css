@@ -217,7 +217,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* reviews */
 .reviews { display: grid; gap: 20px; }
-@media (min-width: 768px) { .reviews { grid-template-columns: 1fr 1fr; } }
+@media (min-width: 768px) { .reviews { grid-template-columns: repeat(3, 1fr); } }
+.reviews__note { text-align: center; font-size: 14px; color: var(--ink-sub); margin-top: 24px; }
 .review { display: block; text-decoration: none; background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 24px; text-align: center; transition: transform .15s; }
 .review:hover { transform: translateY(-3px); }
 .review__site { font-size: 14px; color: var(--ink-sub); }
